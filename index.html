@@ -19,13 +19,19 @@
       body {
         margin: 0;
         padding: 0;
-        height: 100vh;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', Arial, sans-serif;
+        background-color: #ffffff;
+      }
+
+      main {
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Poppins', Arial, sans-serif;
-        background-color: #ffffff;
       }
 
       .logo {
@@ -46,10 +52,33 @@
         text-transform: uppercase;
         letter-spacing: 1px;
       }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+      }
+
+      footer a {
+        color: #67626a;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-    <div class="logo"></div>
-    <h1 class="tagline">Stand Apart. Live Uncommon.</h1>
+    <main>
+      <div class="logo"></div>
+      <h1 class="tagline">Stand Apart. Live Uncommon.</h1>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 The Uncommonspirit Ltd. All rights reserved. |
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </footer>
   </body>
 </html>
